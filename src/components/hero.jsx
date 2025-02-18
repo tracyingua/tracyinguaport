@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="kahitano">Hello I'm</h1>
           <h2 className="pangalawa">Tracy Anne Ingua</h2>
           <h3 className="pangatlo">
-          I craft intuitive and engaging digital experiences that blend aesthetics with functionality. With a keen eye for design and a user-first approach, I create seamless interfaces that enhance usability and elevate brands. Let's bring ideas to life with thoughtful design!
+          I craft intuitive and engaging digital experiences that is blend aesthetics with functionality. With a keen eye for design and a user-first approach, I create seamless interfaces that enhance usability and elevate brands. Let's bring ideas to life with thoughtful design!
           </h3>
           <button
               title="About Me"

@@ -1,0 +1,75 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: linear-gradient(to right, #5a189a, #9d4edd);
+    color: #fff;
+    padding: 0 100px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    width:100vw;
+    margin:0;
+}
+
+
+
+.me {
+    max-width: 50%;
+    text-align: left;
+}
+
+.kahitano {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffdd57;
+    margin-bottom: 10px;
+}
+
+.pangalawa {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pangatlo {
+    font-size: 30px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #f8f9fa;
+}
+
+
+.imageContainer {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageContainer img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .me, .imageContainer {
+        max-width: 100%;
+    }
+
+    .imageContainer {
+        justify-content: center;
+    }
+
+    .imageContainer img {
+        width: 300px;
+    }
+}

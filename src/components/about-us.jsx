@@ -1,4 +1,4 @@
-import "./about.css";
+import "../assets/styles/about.css"
 import img from "./../assets/images/type type.jpg"
 
 export default function navigation() {

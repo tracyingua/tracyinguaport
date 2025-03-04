@@ -1,4 +1,4 @@
-import './button.css'
+import "../assets/styles/button.css"
 
 
 export default function button({title }) {

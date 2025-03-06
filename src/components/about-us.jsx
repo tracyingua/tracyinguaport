@@ -1,24 +1,62 @@
-import "../assets/styles/about.css"
-import img from "./../assets/images/type type.jpg"
+import { useEffect, useState } from "react";
+import "../assets/styles/about.css";
 
-export default function navigation() {
-    return (
-        <div className="container">
-            <div className="upperContainer">
-                <h1>About Me</h1>
-            </div>
-            <div className="lowerContainer">
-                <div className="imageContent">
-                    <img src= {img} alt="" />
-                </div>
-                <p className="aboutMe">Hi there! I’m Tracy Anne, a passionate Graphic Designer, UI/UX Designer, and Photographer dedicated to crafting intuitive and engaging digital experiences. With a keen eye for aesthetics and a deep understanding of user needs, I specialize in creating seamless interfaces that not only enhance usability but also bring brands to life through thoughtful design.
+import profile1 from "../assets/images/5.png";
+import profile2 from "../assets/images/7.png";
+import profile3 from "../assets/images/8.png";
 
-My journey in the world of design is fueled by creativity, attention to detail, and a constant drive to explore new ideas. Whether it’s designing user-centric digital solutions, developing unique branding, or capturing life’s special moments through photography, I strive to deliver work that resonates and inspires.
+const AboutMe = () => {
+  const [activeImg, setActiveImg] = useState(null);
 
-I believe that great design goes beyond visuals—it tells a story, evokes emotions, and solves problems. Let’s work together to transform your vision into captivating designs and unforgettable experiences!</p>
+  useEffect(() => {
+    const images = document.querySelectorAll(".about-img");
 
-            </div>
+    const toggleActive = (event) => {
+      const clickedImg = event.target;
+
+      if (activeImg === clickedImg) {
+       
+        clickedImg.classList.remove("active");
+        setActiveImg(null);
+      } else {
+       
+        images.forEach((img) => img.classList.remove("active"));
+        clickedImg.classList.add("active");
+        setActiveImg(clickedImg);
+      }
+    };
+
+    images.forEach((img) => img.addEventListener("click", toggleActive));
+
+    return () => {
+      images.forEach((img) => img.removeEventListener("click", toggleActive));
+    };
+  }, [activeImg]);
+
+  return (
+    <section className="about-section">
+      <div className="about-container">
+        <div className="about-images">
+          <img src={profile1} alt="Tracy 1" className="about-img img1" />
+          <img src={profile2} alt="Tracy 2" className="about-img img2" />
+          <img src={profile3} alt="Tracy 3" className="about-img img3" />
         </div>
 
-    );
-  }
+        <div className="about-content">
+          <h2>About Me</h2>
+          <p>
+            Your Graphic Designer and Photographer passionate about crafting
+            compelling visuals and seamless digital experiences. I turn ideas into
+            striking designs, stunning photos, and intuitive interfaces. Let’s
+            create something amazing together!
+          </p>
+          <a href="#portfolio" className="about-buttons">
+            View My Work
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutMe;

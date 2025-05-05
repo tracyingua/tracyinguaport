@@ -7,8 +7,8 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h3>Hi, there!</h3>
-        <h1><span>TRACY</span> IS HERE TO BE YOUR UI/UX DESIGNER</h1>
-        <p>I am here ready to help you in making creative digital designs</p>
+        <h1><span>TRACY</span> IS HERE TO BE YOUR UI/UX DESIGNER AND PHOTOGRAPHER</h1>
+        <p>Let’s bring your ideas to life with custom digital designs and high-quality visuals that blend creativity with functionality.</p>
       
       </div>
       

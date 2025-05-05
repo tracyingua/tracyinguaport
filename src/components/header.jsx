@@ -28,15 +28,15 @@ const Header = () => {
           <Link to="/about" onClick={handleNavClick}>
             About
           </Link>
-          <a href="#" onClick={handleNavClick}>
-          My Works
-          </a>
-          <a href="#" onClick={handleNavClick}>
-          Blogs
-          </a>
-          <a href="#" onClick={handleNavClick}>
+          <Link to="/works" onClick={handleNavClick}>
+            Works
+          </Link>
+          <Link to="/blog" onClick={handleNavClick}>
+            Blog
+          </Link>
+          <Link to="/contact" onClick={handleNavClick}>
             Contact
-          </a>
+          </Link>
         </nav>
 
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

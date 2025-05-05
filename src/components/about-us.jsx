@@ -48,7 +48,7 @@ const AboutMe = () => {
             Your Graphic Designer and Photographer passionate about crafting
             compelling visuals and seamless digital experiences. I turn ideas into
             striking designs, stunning photos, and intuitive interfaces. Let’s
-            create something amazing together!
+            create something amazing together! <br /> <br />I specialize in transforming ideas into striking designs, captivating photography, and user-friendly interfaces that tell a story and leave a lasting impression. With a keen eye for detail and a love for creativity, I bring concepts to life through branding, digital design, and authentic visual storytelling. Whether it’s designing for web or capturing moments behind the lens, I’m driven by the belief that great design is both beautiful and functional. <br /> Let’s create something amazing together — something that connects, inspires, and stands out.
           </p>
           <a href="#portfolio" className="about-buttons">
             View My Work

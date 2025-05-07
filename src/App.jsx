@@ -6,6 +6,7 @@ import About from "./components/about-us"
 import Works from "./components/works"
 import Blog from "./components/blog"
 import Contact from "./components/contact"
+import Certificate from "./components/certificates"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/cert" element={<Certificate />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

@@ -31,6 +31,9 @@ const Header = () => {
           <Link to="/works" onClick={handleNavClick}>
             Works
           </Link>
+          <Link to="/cert" onClick={handleNavClick}>
+            Certificates
+          </Link>
           <Link to="/blog" onClick={handleNavClick}>
             Blog
           </Link>
